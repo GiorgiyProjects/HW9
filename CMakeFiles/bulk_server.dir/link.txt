@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/bulk_server.dir/main.cpp.o CMakeFiles/bulk_server.dir/async_server.cpp.o -o bulk_server  -lpthread /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 

@@ -1,0 +1,4 @@
+/home/runner/work/HW9/HW9/CMakeFiles/rebuild_cache.dir
+/home/runner/work/HW9/HW9/CMakeFiles/edit_cache.dir
+/home/runner/work/HW9/HW9/CMakeFiles/test.dir
+/home/runner/work/HW9/HW9/CMakeFiles/bulk_server.dir
