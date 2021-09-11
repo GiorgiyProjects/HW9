@@ -176,9 +176,10 @@ public:
                 PushBlockToOutputQueues(M.GetCurrentBlock(), FileLoggerQueue, ConsoleLoggerQueue);
                 M.Refresh(); // empty buffers
             }
-            std::this_thread::sleep_for(0.1s);
+            //std::this_thread::sleep_for(0.1s);
         }
-
+        PushBlockToOutputQueues(M.GetCurrentBlock(), FileLoggerQueue, ConsoleLoggerQueue);
+        M.Refresh();
         return;
     }
 
