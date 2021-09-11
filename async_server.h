@@ -35,7 +35,6 @@ private:
                                 {
                                     if (!ec)
                                     {
-                                        //std::cout << "receive " << length << "=" << std::string{mData, length} << std::endl;
                                         std::string in = mData;
                                         mParser.ReceiveInput(in);
                                     }
@@ -72,7 +71,7 @@ public:
 
     void handle_accept(const boost::system::error_code& error)
     {
-        if (error == nullptr)
+        if (!error)
         {
             std::make_shared<AsyncBulkSession>(std::move(mSocket), mParser)->start();
             do_accept();
