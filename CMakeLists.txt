@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(bulk_server)
 
-find_package(Boost COMPONENTS system unit_test_framework REQUIRED)
+find_package(Boost 1.65.0 COMPONENTS system unit_test_framework REQUIRED)
 add_executable(bulk_server main.cpp async_server.cpp async_server.h CommandBlock.h)
 add_executable(test tests.cpp async_server.cpp async_server.h CommandBlock.h)
 
